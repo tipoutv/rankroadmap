@@ -1,0 +1,64 @@
+:root {
+  --bg: #0b0c10;
+  --bg-card: #14151a;
+  --border: #1f2027;
+  --text: #e6e6eb;
+  --muted: #9a9aa3;
+
+  --good: #4cd964;
+  --bad: #ff5c5c;
+  --accent: #5f7cff;
+  --accent-2: #8aa2ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #0b0c10;
+  color: #e6e6eb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  background: #14151a;
+  border: 1px solid #1f2027;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.good {
+  color: #4cd964;
+}
+
+.bad {
+  color: #ff5c5c;
+}
+
+.progress {
+  height: 8px;
+  background: #1c1d24;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress > div {
+  height: 100%;
+  background: #5f7cff;
+}
